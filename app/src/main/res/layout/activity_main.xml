@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/imgCookie"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/cookie"
+        android:layout_marginTop="200dp"
+
+        />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-460dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/Name"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/lblStory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgCookie"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/Story" />
+
+    <Button
+        android:id="@+id/btnlike"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblStory"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:text="@string/Like"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btndislike"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblStory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/red"
+        android:text="@string/Dislike"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+
